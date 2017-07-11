@@ -72,8 +72,8 @@ $(document).ready(function(){
 		}
 
 		else{
-			$("#result").html("You attacked "+ enemyName + " for "+ myAttackPower+ "<br>"+
-				enemyName + " attacked you back for " + enemyDamage);
+			$("#result").html("You attacked "+ enemyName + " for "+ myAttackPower+" damage "+ "<br>"+
+				enemyName + " attacked you back for " + enemyDamage+ " damage ");
 
 	
 			enemyHealth-=myAttackPower;
@@ -81,14 +81,15 @@ $(document).ready(function(){
 			if (enemyHealth <= 0){
 				console.log($("#enemies").children().length);
 
-				if($("#enemies").children().length > 1){
+				if($("#enemies").children().length > 0){
 
 					$("#result").html("You have defeated "+ enemyName+", you can choose to fight another enemy."+"<br>");
-					
 					noEnemyFlag = true;
 				}
 				else{
-					$("#result").html("YOU WON!!!...GAME OVER!!!");
+					$("#result").html("YOU WON!!!...GAME OVER!!!"+"<br>");
+					$("#result").append(restartBtn);
+
 				}
 				enemy.remove();
 

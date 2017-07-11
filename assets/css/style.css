@@ -1,10 +1,12 @@
 
+
+
 h1{
 	text-align: center;
 }
 .img-frame{
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 	text-align: center;
 	margin: 0;
 	border: solid green;
@@ -12,7 +14,17 @@ h1{
 }
 
 img{
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	clear: both;
+}
+
+#result {
+
+	color: white;
+	font-weight: 32px;
+}
+
+#result button{
+	color: black;
 }
