@@ -2,35 +2,60 @@
 <html>
 <head>
 	<title>RPG Starwars</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
 <h1>Star Wars RPG!</h1>
-<div id="original-images">
-	<img id="first-character" src="assets/images/obi-wan-kenobi.jpeg" data-type="">
-	<img id="second-character" src="assets/images/luke-skywalker.jpeg" data-type="">
-	<img id="third-character" src="assets/images/darth-sidious.jpeg" data-type="">
-	<img id="fourth-character" src="assets/images/darth-maul.jpeg" data-type="">
-</div>
-<div id="selected-character">
-Your character <br>
+<div class="container">
+	<div id="original-images" class="row">
+		<div id="first-character" data-type="" class="img-frame">
+			Obi Wan Kenobi
+			<img  src="assets/images/obi-wan-kenobi.jpeg" ><br>
+			100
+
+		</div>
+		<div id="second-character" data-type="" class="img-frame">
+			Luke Skywalker
+			<img  src="assets/images/luke-skywalker.jpeg"><br>
+			90
+		</div>
+		<div id="third-character" data-type="" class="img-frame">
+			Darth Sidious
+			<img  src="assets/images/darth-sidious.jpeg" ><br>
+			120
+		</div>
+		<div id="fourth-character" data-type="" class="img-frame">
+			Darth Maul
+			<img  src="assets/images/darth-maul.jpeg" ><br>
+			80
+		</div>
+	</div>
+
+	<div id="selected-character" class="row">
+		Your character <br>
 	
-</div>
+	</div>
 
-<div id="enemies">
-	Enemies Available To Attack<br>
-</div>
+	<div id="enemies" class="row">
+		Enemies Available To Attack<br>
+	</div>
 
-<div>
-	Fight Section
-	<button>
-		Attack
-	</button>
-</div>
-<div id="defender">
-	Defender<br>
+	<div id="fight-section" class="row">
+		Fight Section<br>
+		<button id="attack-btn">
+			Attack
+		</button>
+		<div id="defender">
+			Defender<br>
+		</div>
+	</div>
 </div>
 </body>
 </html>
+
+
+
+

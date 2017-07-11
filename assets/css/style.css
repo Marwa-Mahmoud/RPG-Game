@@ -1,8 +1,15 @@
 
+.img-frame{
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	margin: 0;
+	border: solid green;
+	float: left;
+}
+
 img{
 	height: 150px;
 	width: 150px;
-	padding: 15px;
-	margin: 0;
-	border: solid green;
+	clear: both;
 }

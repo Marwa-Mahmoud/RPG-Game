@@ -11,16 +11,17 @@ $(document).ready(function(){
 		$("#enemies").append($("#original-images").children());
 		$("#enemies").children().css("border", "solid 10px red");
 		$("#enemies").children().attr("data-type", "enemy");
-	//$("#original-images").children().attr("data-type", "enemy");
-	//$("#original-images").empty();
 
 		$("[data-type=enemy]").on("click", function(){
 
 			$("#defender").append($(this));
+			$(this).css("border", "solid 10px black");
 		});
 
 
 	});
+
+
 
 
 
